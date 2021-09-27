@@ -1,0 +1,1 @@
+SELECT * FROM dataset NATURAL JOIN testset@site1;

@@ -1,0 +1,15 @@
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+
+CREATE OR REPLACE FUNCTION normalizeNo(
+    yes IN  FLOAT,
+    n IN FLOAT
+)
+RETURN FLOAT
+IS
+    RESULT FLOAT;
+BEGIN
+    RESULT:= (n / (yes + n));
+    RETURN RESULT;
+END normalizeNo;
+/
